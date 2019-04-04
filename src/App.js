@@ -1,10 +1,14 @@
 import React, { Component } from 'react';
 import SomeComponent from './SomeComponent'
+import { OtherComponent } from './OtherComponent'
 
 class App extends Component {
   render() {
     return (
-      <SomeComponent />
+      <React.Fragment>
+        {/* <SomeComponent /> */}
+        <OtherComponent />
+      </React.Fragment>
     );
   }
 }
